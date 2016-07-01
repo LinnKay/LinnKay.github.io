@@ -20,9 +20,10 @@
     <!-- JS Charts -->
     <script type="text/javascript" src="js/jscharts.js"></script>
     <div id="chartcontainer"
- <script type="text/javascript">
-	var myChart = new JSChart('chartcontainer', 'bar');
-	myChart.setDataXML('data.xml');
+<script type="text/javascript">
+	var myData = new Array([10, 20], [15, 10], [20, 30], [25, 10], [30, 5]);
+	var myChart = new JSChart('chartcontainer', 'line');
+	myChart.setDataArray(myData);
 	myChart.draw();
 </script>
 <?xml version="1.0"?>
@@ -35,6 +36,7 @@
 		<data unit="30" value="5"/>
 	</dataset>
 </JSChart>
+
 
     </div>
     <!-- github calendar css -->
